@@ -1,0 +1,61 @@
+##
+
+React Native: Grocery Shop  Part 1 | React Hooks | Mock Data
+- ``rvm install 2.7.5``
+- ``nvm list``
+- ``nvm use v14.15.5``
+- ``bash -l -c "rvm use 2.7.5"``
+- ``npx react-native init GroceryShop``
+- ``code GroceryShop``
+- ``. ~/.zshrc``
+- yarn ios
+- bundle install
+- bundle exec pod install
+
+- Run instructions for Android:
+    • Have an Android emulator running (quickest way to get started), or a device connected.
+    • ``cd "/Users/mac/Documents/Fast Payment/POC/react-native/GroceryShop" && npx react-native run-android``
+  
+  Run instructions for iOS:
+    • ``cd "/Users/mac/Documents/Fast Payment/POC/react-native/GroceryShop" && npx react-native run-ios``
+    - or -
+    • Open GroceryShop/ios/GroceryShop.xcworkspace in Xcode or run ``xed -b ios``
+    • Hit the Run button
+
+## miragejs server side
+
+``yarn add --dev miragejs``
+lancer le server by adding **import './mocks/server';** on index.js
+
+
+## links
+
+Design link: https://bit.ly/GroceryShopAppUI
+Create mock data API: https://miragejs.com/
+Source code: https://bit.ly/GroceryShopApp
+
+
+## ajouter le text du composant dynamiquement
+
+tapez rnfe
+
+import React from 'react';
+import { StyleSheet, View, Text, Image, TouchableOpacity, ScrollView } from 'react-native';
+
+const ListCategory = () => {
+    return (
+        <View>
+            <Text>ListCategory</Text>
+        </View>
+    );
+};
+
+export default ListCategory;
+
+const styles = StyleSheet.create({
+    
+});
+
+## ajouter @react-navigation/native
+
+yarn add --dev @react-navigation/native
